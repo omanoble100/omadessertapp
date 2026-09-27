@@ -7,7 +7,7 @@ const Home = () => {
 
   const [cart, setCart] = useState([]);
   return (
-    <div className='w-[90%] mx-auto'>
+    <div className='w-[90%] mx-auto '>
      
      <div className='mt-35 flex justify-between flex-col lg:flex-row'>
         

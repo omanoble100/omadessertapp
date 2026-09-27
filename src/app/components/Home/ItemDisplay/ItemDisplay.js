@@ -135,7 +135,7 @@ const ItemDisplay = ({ cart, setCart}) => {
 
   return (
 
-<div className='flex text-align flex-wrap mt-7'>
+<div className='flex text-align flex-wrap mt-7 items-center justify-center sm:justify-between'>
     
     {products.map((product) => {
 
@@ -149,7 +149,7 @@ const ItemDisplay = ({ cart, setCart}) => {
         const quantity = cartItem ? cartItem.quantity : 0;
 
    return( 
-   <div key={product.id}>
+   <div key={product.id} >
       <div className='w-[300px] '>
             <div className='relative mx-2 '>
                 <Image 
