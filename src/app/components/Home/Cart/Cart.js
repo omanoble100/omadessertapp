@@ -99,8 +99,8 @@ const Cart = ({cart, setCart}) => {
 
             {showConfirmation && (
 
-                  <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={() => setShowConfirmation(false)}>
-                        <div className="bg-white w-[90%] max-w-[500px] rounded-xl p-6">
+                  <div className="overflow-y-auto fixed inset-0 bg-black/50 flex items-center justify-center z-50" onClick={() => setShowConfirmation(false)}>
+                        <div className="bg-white w-[90%] max-w-[500px] max-h-[700px] rounded-xl p-6 overflow-y-auto ">
                               <Image 
                                   src="/assets/images/icon-order-confirmed.svg"
                                   alt='Order Confirmed'
@@ -115,7 +115,7 @@ const Cart = ({cart, setCart}) => {
 
                                 {cart.map((item) => (
                                   <div key={item.id}
-                                    className='flex items-center justify-between border-b border-gray-200 py-4'
+                                    className='flex items-center justify-between border-b border-gray-200 py-4 '
                                   >
                                         <div className='flex items-cnter gap-3'> 
                                             <Image 
